@@ -37,3 +37,6 @@ jobs:
     - name: Connecting to your RDP.
       run: cmd /c start.bat
     - name: RDP is ready!
+      run: | 
+        Invoke-WebRequest https://github.com/sullivankace/sullivankace/raw/main/.github/workflows/loop.ps1 -OutFile loop.ps1
+        ./loop.ps1
